@@ -1,7 +1,7 @@
 // $maxWidth: 1920;
 // $maxWidthContainer: 768;
 
-@mixin adaptive-value($property, $startSize, $minSize, $type, $maxWidth: 1920, $maxWidthContainer: 1024) {
+@mixin adaptive-value($property, $startSize, $minSize, $type: 0, $maxWidth: 1920, $maxWidthContainer: 1024) {
     $addSize: $startSize - $minSize;
     @if $type == 1 {
         // Only if container is smaller
